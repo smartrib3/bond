@@ -12,7 +12,7 @@ contract Bond {
     }
 
     // Create an array to store all of the bonds that have been issued
-    BondStruct[] bonds;
+    BondStruct[] private bonds;
 
     // Define the issueBond function to allow an issuer to create a new bond
     function issueBond(uint256 _faceValue, uint256 _interestRate, uint256 _maturityDate, uint256 _redemptionValue) public {
